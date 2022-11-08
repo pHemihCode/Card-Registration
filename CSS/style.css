@@ -1,0 +1,357 @@
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url("/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100vh;
+    color:hsl(0, 0%, 100%);
+}
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%;
+}
+.card-part{
+    margin-top:35px;
+}
+.first-card{
+    position:relative;
+    width:100%;
+}
+.first-card img{
+    width:100%;
+}
+.first-card .card-logo{
+    position:absolute;
+    width:20%;
+    height:20%;
+    top:10%;
+    left:7%;
+}
+.first-card > input{
+    font-weight:300;
+    text-align:start;
+    font-size:2rem;
+    color:hsl(0, 0%, 100%);
+    background-color: #000;
+    position:absolute;
+    top:55%;
+    left:7%;
+    z-index:1;
+    width:90%;
+    background-color: transparent;
+    border:none;
+    padding:0;
+    height:50px;
+}
+.first-card > input:focus{
+    outline:0;
+}
+.first-card > input::placeholder{
+    font-size:2rem;
+    color:hsl(0, 0%, 100%);
+}
+.card-name-date{
+    display:flex;
+    justify-content:space-between;
+    color:hsl(0, 0%, 100%);
+    font-size:1.1rem;
+    font-weight:100;
+    position:absolute;
+    top:77%;
+    left:7%;
+    width:85%;
+}
+.card-name-date input{
+    background-color: transparent;
+    border:none;
+    color:hsl(270, 3%, 87%);
+    font-size:1.2rem;
+}
+.card-name-date input:focus{
+    outline:0;
+}
+.card-name-date input::placeholder{
+    color:hsl(270, 3%, 87%)
+}
+#oncard-name{
+    width:60%;
+}
+.card-date{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.card-date p{
+    text-align:center;
+     margin-top:8px;
+     font-size:1.2rem;
+     color:hsl(270, 3%, 87%);
+}
+#month-space,
+#year-space{
+    background-color: transparent;
+    font-size:1.2rem;
+    color:hsl(270, 3%, 87%);
+    cursor:auto;
+}
+#month-space,
+#year-space:hover{
+    opacity:100%;
+}
+.second-card{
+    position:relative;
+    left:15%;
+    margin-top:20px;
+    border-radius:10px;
+    width:100%;
+}
+.second-card img{
+    width:100%;
+}
+.second-card input{
+    position:absolute;
+    top:42%;
+    color:hsl(0, 0%, 100%);
+    right:13%;
+    font-weight:100;
+    width:20%;
+    background-color: transparent;
+    text-align: end;
+    border:none;
+}
+.second-card input::placeholder{
+    color:hsl(270, 3%, 87%);
+}
+
+/* =========================================================THE FORM=============================================================== */
+form{
+    width:330px;
+    /* display:none; */
+}
+.input-details{
+    display:flex;
+    flex-direction: column;
+    color:#000;
+    margin-top:20px;
+}
+label{
+    font-size:.8rem;
+    color:hsl(278, 68%, 11%);
+    margin-bottom:5px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+input{
+    padding:8px;
+    border-radius:5px;
+    font-weight:500;
+    border:1px solid hsl(270, 3%, 87%);
+}
+input:focus{
+    outline:1px solid hsl(278, 94%, 30%);
+}
+.input-details.error input{
+    border:1px solid hsl(0, 100%, 66%);
+}
+.input-details.success input{
+    border:1px solid hsl(270, 3%, 87%);
+}
+.input-details small{
+    color:hsl(0, 100%, 66%);
+    height:15px;
+    font-size:.6rem;
+    margin-top:3px;
+}
+.flexing-part .input-details{
+    width:100%;
+    height:71px;
+    display:block;
+}
+/* --------------------------------THE MONTH /YEAR ---------------------------------- */
+#card-exp-month,
+#card-exp-year{
+    width:100%;
+    margin-top:5px;
+}
+#card-exp-month{
+    width:40%;
+    display:inline-block;
+    
+}
+#card-exp-year{
+    width:40%;
+}
+#cvc{
+    width:100%;
+    margin-top:5px;
+    
+}
+.flexing-part{
+    display:flex;
+}
+button{
+    padding:8px;
+    font-size:1rem;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    width:100%;
+    border-radius:5px;
+    cursor:pointer;
+    border:none;
+    opacity:100%;
+    transition:all .7s ease-in-out;
+}
+button:hover{
+    opacity:70%;
+}
+/* ===============================================THANK YOU PAGE=============================================================== */
+.hidden{
+    display:none;
+}
+.thank-you {
+    color:#000;
+    width:330px;
+    text-align: center;
+    display:none;
+}
+.thank-you img{
+    height:70px;
+}
+.thank-you h2{
+    font-size:1.6rem;
+    margin-top:40px;
+    font-weight:300;
+    margin-bottom:15px;
+}
+.thank-you p{
+    color:hsl(279, 6%, 55%);
+    font-size:1rem;
+    margin-bottom:40px;
+}
+
+/* =========================================================600PX================================================================= */
+@media screen and (max-width:600px){
+    :root{
+        font-size:13px;
+    }
+    body{
+        background-image: url("/images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:100%;
+    }
+    .card-name-date{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        height:100vh;
+    }
+    .card-part{
+        margin-top:160px;
+    }
+    .first-card{
+        position:relative;
+        top:240px;
+        z-index:1;
+        left:8px;
+        width:80%;
+    }
+    .first-card img{
+        width:100%;
+    }
+    .card-date{
+        height:34px;
+    }
+    .first-card > input{
+        top:48%;
+    }
+    .card-name-date{
+        top:74%;
+    }
+    .second-card{
+        position:relative;
+        top:-100px;
+        left:27%;
+        margin-top:20px;
+        border-radius:10px;
+        width:70%;
+    }
+    .form-part{
+        margin-top:50px;
+    }
+    .second-card .card-cvc{
+        top:43%;
+    }
+    .second-card input{
+        top:39%;
+        right:13%;
+    }
+    button{
+        margin-bottom:30px;
+    }
+}
+/* =====================================================400PX======================================================== */
+@media screen and (max-width:400px) {
+    :root{
+        font-size:13px;
+    }
+    .first-card{
+        position:relative;
+        top:163px;
+        z-index:1;
+        left:20px;
+        width:70%;
+    }
+    .first-card > input::placeholder{
+        font-size:1.6rem;
+    }
+    .second-card{
+        left:21%;
+    }
+    .card-name-date input{
+        font-size:.8rem;
+    }
+    .card-date p{
+        font-size:.8rem;
+        margin-top:12px;
+    }
+    #month-space,
+    #year-space{
+        font-size:.8rem;
+        padding:11px;
+        text-align: center;
+    }
+}
+/* =====================================================1440PX========================================================= */
+@media screen and (min-width:1440px) {
+    :root{
+        font-size:16px;
+    }
+    .first-card{
+        position:relative;
+        left:20%;
+    }
+    .second-card{
+        left:40%;
+    }
+    .second-card input{
+        top:42%;
+        right:13%;
+    }
+    .second-card input::placeholder{
+        color:hsl(0, 0%, 100%);
+        font-size:1rem;
+    }
+}

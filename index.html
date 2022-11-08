@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <title>Card Details</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card-part">
+      <div class="first-card">
+        <img src="images/bg-card-front.png" alt="Card1">
+        <img src="images/card-logo.svg" alt="Card-logo"  class="card-logo">
+        <input type="text" id="oncard-number" name="name" placeholder=" 0000 0000 0000 0000" disabled>
+        <div class="card-name-date">
+          <input type="text" id="oncard-name" name="name" placeholder="JANE APPLESEED" disabled>
+         <div class="card-date">
+          <button id="month-space">00</button>
+          <p>/</p>
+          <button id="year-space">00</button>
+         </div>
+        </div>
+      </div>
+      <div class="second-card">
+        <img src="images/bg-card-back.png" alt="Card2">
+        <input type="text" id="oncard-cvc" name="cvc" placeholder="000" disabled>
+      </div>
+    </div>
+    <div class="form-part">
+      <form action="#" id="myform">
+        <div class="input-details">
+          <label for="card-holder">CARDHOLDER NAME</label>
+          <input type="text" id="card-holder" name="card-holder" placeholder="e.g Jane Appleseed" oninput="checkName()">
+          <small></small>
+        </div>
+        <div class="input-details">
+          <label for="card-number">CARD NUMBER</label>
+          <input type="text" id="card-number" name="card-number"   placeholder="e.g 1234 5678 9123 0000" oninput="checkNumber()">
+          <small></small>
+        </div>
+        <div class="flexing-part">
+          <div class="input-details">
+            <label for="card-exp-date">EXP. DATE (MM/YY)</label><br>
+              <input type="text" id="card-exp-month" name="card-exp-date" placeholder="MM" maxlength="2" oninput="checkMonth()">
+              <input type="text" id="card-exp-year" name="card-exp-date" placeholder="YY" maxlength="2" oninput="checkYear()"><br>
+            <small></small>
+          </div>
+          <div class="input-details">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" placeholder="e.g 123" maxlength="3" oninput="checkCvc()">
+            <small></small>
+          </div>
+        </div><br>
+        <button type="submit" class="btn" id="confirm">Confirm</button>
+      </form>
+    </div>
+    <div class="thank-you">
+      <img src="images/icon-complete.svg" alt="Complete-icon">
+      <h2>THANK YOU !</h2>
+      <p>We've added your card details</p>
+      <button class="continue" type="submit" id="continue">Continue</button>
+    </div>
+  </div>
+
+
+  
+  <script src="JS/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> --- displays site properly based on user's device
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+ Feel free to remove these styles or customise in your own stylesheet 👍 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html> -->
