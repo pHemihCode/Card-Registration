@@ -37,7 +37,7 @@ body{
 .first-card > input{
     font-weight:300;
     text-align:start;
-    font-size:2rem;
+    font-size:2.2rem;
     color:hsl(0, 0%, 100%);
     background-color: #000;
     position:absolute;
@@ -82,6 +82,7 @@ body{
 }
 #oncard-name{
     width:60%;
+    padding:8px 0;
 }
 .card-date{
     display:flex;
@@ -302,7 +303,7 @@ button:hover{
         margin-bottom:30px;
     }
 }
-/* =====================================================400PX======================================================== */
+/* =====================================================375PX======================================================== */
 @media screen and (max-width:375px) {
     :root{
         font-size:13px;
@@ -315,10 +316,10 @@ button:hover{
         width:70%;
     }
     .first-card input{
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
     .first-card > input::placeholder{
-        font-size:1.6rem;
+        font-size:1.4rem;
     }
     .second-card{
         left:21%;
