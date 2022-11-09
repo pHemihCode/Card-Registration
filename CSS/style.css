@@ -263,7 +263,7 @@ button:hover{
     }
     .first-card{
         position:relative;
-        top:240px;
+        top:215px;
         z-index:1;
         left:8px;
         width:80%;
@@ -303,22 +303,28 @@ button:hover{
     }
 }
 /* =====================================================400PX======================================================== */
-@media screen and (max-width:400px) {
+@media screen and (max-width:375px) {
     :root{
         font-size:13px;
     }
     .first-card{
         position:relative;
-        top:163px;
+        top:148px;
         z-index:1;
         left:20px;
         width:70%;
+    }
+    .first-card input{
+        font-size:1.6rem;
     }
     .first-card > input::placeholder{
         font-size:1.6rem;
     }
     .second-card{
         left:21%;
+    }
+    .second-card input{
+        top:36.5%;
     }
     .card-name-date input{
         font-size:.8rem;
